@@ -1,0 +1,22 @@
+{
+    "sqltools.connections": [
+        {
+            "connectionTimeout": 15,
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": false,
+                "trustServerCertificate": true
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "127.0.0.1",
+            "driver": "MSSQL",
+            "name": "AcademyDB",
+            "database": "master",
+            "password": "1",
+            "connectString": "Server=localhost,1433;Database=master;User Id=sa;Password=1;TrustServerCertificate=true",
+            "username": "sa"
+        }
+    ]
+}
