@@ -1,0 +1,9 @@
+-- SELECT 
+--     t.Surname AS CuratorSurname,
+--     g.Name AS GroupName
+-- FROM 
+--     Curators c
+-- JOIN 
+--     Teachers t ON c.TeacherId = t.Id
+-- JOIN 
+--     Groups g ON c.GroupId = g.Id;

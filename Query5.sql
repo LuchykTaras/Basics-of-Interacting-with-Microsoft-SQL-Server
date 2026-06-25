@@ -1,0 +1,15 @@
+SELECT DISTINCT 
+    t.Surname AS TeacherSurname, 
+    f.Name AS FacultyName
+FROM 
+    Teachers t
+JOIN 
+    Lectures l ON t.Id = l.TeacherId
+JOIN 
+    GroupsLectures gl ON l.Id = gl.LectureId
+JOIN 
+    Groups g ON gl.GroupId = g.Id
+JOIN 
+    Departments d ON g.DepartmentId = d.Id
+JOIN 
+    Faculties f ON d.FacultyId = f.Id;
